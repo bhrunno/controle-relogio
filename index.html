@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="full" lang="en" ng-app="Teste02">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Teste 02
+        </title>
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="css/estilo.css" rel="stylesheet">
+        <link href="css/relogio.css" rel="stylesheet">
+    </head>
+    
+    <body class="is-moment">
+        <div class="container">
+            <header class="row">
+                <div class="panel panel-default" ng-controller="Teste02Ctrl_msg">
+                    <h3 ng-bind="message">
+                    </h3>
+                </div>
+            </header>
+            <div class="row">
+                <div role="main">
+                    <div class="hero-circle">
+                        <div class="hero-face">
+                            <div id="hour" class="hero-hour" style="transform: rotate(404.808deg);">
+                            </div>
+                            <div id="minute" class="hero-minute" style="transform: rotate(177.7deg);">
+                            </div>
+                            <div id="second" class="hero-second" style="transform: rotate(222deg);">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btnCtrl" ng-controller="Teste02Ctrl_action">
+                        <button class="btn btn-primary btn-lg b1" ng-click="esconderRelogio()">
+                            Esconder Relogio
+                        </button>
+                        <button class="btn btn-primary btn-lg b2" ng-click="mostrarRelogio()">
+                            Mostrar Relogio
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <footer class="bs-footer" role="contentinfo">
+                bhrunno.medeiros@gmail.com ©2016 Tools | Site Privacy policy
+            </footer>
+        </div>
+        <script src="js/jquery.js">
+        </script>
+        <script src="bootstrap/js/bootstrap.js">
+        </script>
+        <script src="angular/angular.js">
+        </script>
+        <script src="js/moment-with-locales.min.js">
+        </script>
+        <script src="js/relogio.js">
+        </script>
+        <script src="js/controller.js">
+        </script>
+    </body>
+
+</html>

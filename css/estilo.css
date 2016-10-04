@@ -1,0 +1,45 @@
+body {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background: none;
+}
+
+.full {
+  background: url(../img/fundo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.panel-default{
+width: 50%;	
+ margin-top: -2%;
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+ 
+}
+
+.btnCtrl{
+	margin-top: 5%;
+}
+
+.b1{
+  float:right;
+
+}
+
+.b2{
+  float:right;
+  visibility:hidden;
+  display:none;
+
+}
+
+.bs-footer{
+	position: absolute;
+    bottom: 0;
+    height: 60px;
+    
+}
